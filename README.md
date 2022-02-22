@@ -36,6 +36,9 @@ Foreign key: (course_id,sec_id, semester, year) references section(course_id,sec
 10. grade_point ( grade: varchar(2), point: numeric(2, 1) ) 
 
 **The task was splitted into two stages:**
+
 a) **Build the database using MySQL** - Using the schemas above, define tables with appropriate constraints and store the corresponding table definition statements in a sql file called "tables.sql". 
 
 b) **SQL queries** - Developed SQL statements for the specified queries in the assignment description. Finally, stored each SQL statement in separate sql files called "q1a.sql", "q1b.sql", "q2.sql", …, "q10.sql
+
+**Both projects have been submitted as the partial requirement for the COM3278 Introduction to the Database MAnagement Systems at the University of Hong Kong**
