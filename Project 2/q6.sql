@@ -1,0 +1,1 @@
+SELECT teaches.ID, MAX(num_cs), name FROM (SELECT COUNT(course_id) AS num_cs FROM teaches, instructor WHERE teaches.ID = instructor.ID GROUP BY teaches.ID) AS TMP, teaches, instructor;

@@ -1,0 +1,1 @@
+SELECT COUNT(course_id), course_id, sec_id FROM takes WHERE course_id IN (SELECT course_id FROM takes WHERE year = '2009' AND semester = 'Fall') AND year = '2009' AND semester = 'Fall' GROUP BY course_id, sec_id;

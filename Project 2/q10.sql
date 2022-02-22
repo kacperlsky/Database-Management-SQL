@@ -1,0 +1,1 @@
+SELECT name, salary FROM instructor WHERE ID IN (SELECT ID FROM section WHERE course_id IN (SELECT course_id FROM section WHERE time_slot_id IN (SELECT time_slot_id FROM time_slot WHERE start_hr >= 18)));

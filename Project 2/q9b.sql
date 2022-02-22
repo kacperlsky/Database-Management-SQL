@@ -1,0 +1,1 @@
+SELECT ID, grade, course_id, sec_id, semester, year FROM takes WHERE ID IN (SELECT ID FROM `takes` WHERE grade LIKE 'F' GROUP BY ID HAVING COUNT(grade) >= 2) AND grade LIKE 'F';

@@ -1,0 +1,1 @@
+SELECT ID, SUM(credits) FROM takes, course WHERE takes.course_id = course.course_id AND takes.course_id IN (SELECT course_id FROM course) GROUP BY ID;
